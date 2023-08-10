@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    *{
+        font-family: inter
+    }
+
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+        background: #16a34a
+    }
+
+    .header-box .box img{
+        animation-duration: 1s;
+        --animate-delay: .1s;        
+    }
+
+    .header-box .box h1{
+        animation-duration: 1s;
+        --animate-delay: .4s;        
+    }
+
+    .header-box .box p{
+        animation-duration: 1s;
+        --animate-delay: .6s;        
+    }
+
+    .header-box .box button{
+        animation-duration: 1s;
+        --animate-delay: .8s;        
+    }
+
+    .btt.is-active{
+        display: block
+    }
+
+    @media screen and (max-width: 768px) {
+        .menu {
+            transform: scale(0);
+            transition: all .3s ease;
+            transform-origin: top;
+            opacity: 0;
+        }
+
+        .menu-active{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}

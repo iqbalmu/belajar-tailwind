@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwindcss Project</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../public/assets/icon/nm.png" type="image/x-icon" />
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Hamburgers Jonsuh -->
+  <link href="../src/dist/css/hamburgers.css" rel="stylesheet" />
+
+  <!-- Animate Style -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="../src/dist/css/output.css" /> -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="home" class="overflow-x-hidden">
+  <!-- Navbar -->
+  <div class="navbar px-4 py-3 border">
+    <div class="container mx-auto">
+      <div class="navbar-box flex items-center justify-between">
+        <div class="logo flex items-center gap-x-2">
+          <img src="./assets/Tailwind.png" alt="Logo Tailwind" class="md:w-16 w-10" />
+          <h1 class="font-bold md:text-2xl text-xl">Ngoding.</h1>
+        </div>
+        <ul
+          class="menu md:flex z-50 gap-x-6 items-center font-bold md:static absolute top-20 left-0 md:bg-transparent bg-teal-500 md:w-auto w-full">
+          <li class="text-center py-4 md:hover:bg-transparent hover:bg-teal-800">
+            <a href="#home" class="md:text-teal-950 text-white hover:text-teal-500">Home</a>
+          </li>
+          <li class="text-center py-4 md:hover:bg-transparent hover:bg-teal-800">
+            <a href="#about" class="md:text-teal-950 text-white hover:text-teal-500">About</a>
+          </li>
+          <li class="text-center py-4 md:hover:bg-transparent hover:bg-teal-800">
+            <a href="#services" class="md:text-teal-950 text-white hover:text-teal-500">Services</a>
+          </li>
+          <li class="text-center py-4 md:hover:bg-transparent hover:bg-teal-800">
+            <a href="#projects" class="md:text-teal-950 text-white hover:text-teal-500">Projects</a>
+          </li>
+          <li class="text-center py-4 md:hover:bg-transparent hover:bg-teal-800">
+            <a href="#contact" class="md:text-teal-950 text-white hover:text-teal-500">Contact</a>
+          </li>
+          <div class="md:block hidden opacity-50">|</div>
+          <i class="md:block hidden fa-brands fa-github text-2xl hover:text-teal-500 cursor-pointer"></i>
+        </ul>
+        <button class="hamburger hamburger--collapse md:hidden flex" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner bg-teal-500 before:bg-teal-500 after:bg-teal-500"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header min-h-screen flex items-center">
+    <div class="container mx-auto px-8">
+      <div class="header-box flex lg:flex-row flex-col items-center gap-10">
+        <div class="box lg:w-1/2 lg:order-1 order-2">
+          <h1 class="mb-5 text-slate-900 lg:text-4xl text-2xl lg:text-left text-center font-extrabold leading-normal animate__animated animate__fadeInUp animate__delay-1s">
+            Penghijauan, Menciptakan Generasi Yang Cerah Di Masa Mendatang.
+          </h1>
+          <p class="mb-5 text-slate-600 lg:text-base text-sm lg:text-left text-center leading-loose animate__animated animate__fadeInUp animate__delay-1s">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Delectus, mollitia, in vitae temporibus laboriosam minus incidunt
+            placeat cumque voluptatum aliquid animi minima sapiente dolore
+            itaque magnam quas. Quis, magnam veritatis!
+          </p>
+          <button
+            class="px-4 py-3 bg-teal-500 hover:bg-teal-600 shadow-xl rounded text-white font-semibold block lg:m-0 mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+            Tentang Kami <i class="fa-solid fa-question"></i>
+          </button>
+        </div>
+        <div class="box lg:w-1/2 lg:order-2 order-1">
+          <img src="./assets/image/hero.svg" alt="undraw.co"
+            class="xl:w-[400px] lg:w-[350px] md:w-[250px] w-[200px] ml-auto animate__animated animate__fadeInUp animate__delay-1s" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="about py-20 min-h-screen">
+    <div class="container mx-auto px-8">
+      <div class="about-box">
+        <div class="box text-center">
+          <h1 class="text-slate-900 font-extrabold text-4xl mb-4" data-aos="fade-up" data-aos-duration="1000">
+            About Us
+          </h1>
+          <p class="text-slate-500 w-3/4 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Laboriosam, ab natus dolore repudiandae deserunt, corrupti facere
+            eos necessitatibus animi consequatur, sit amet quos ex odit?
+            Libero nulla debitis natus vero?
+          </p>
+        </div>
+        <div class="box pt-16">
+          <img src="./assets/image/about1.svg" alt="undraw.co" class="w-[450px] mx-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services" class="services min-h-screen py-14">
+    <div class="container mx-auto px-8">
+      <div class="services-box flex flex-col items-center">
+        <div class="box text-center mb-4">
+          <h1 class="font-extrabold text-4xl text-slate-900 mb-4" data-aos="fade-up" data-aos-duration="1000">
+            Services
+          </h1>
+          <p class="text-slate-500 w-4/5 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            voluptate, nihil maiores reprehenderit perspiciatis est mollitia
+            adipisci? Tenetur possimus est non vero, voluptatibus qui
+            repellendus. Repellat, consequatur quaerat. Incidunt, laboriosam?
+          </p>
+        </div>
+        <div class="box grid md:grid-cols-2 grid-cols-1 items-center gap-16 pt-16">
+          <img src="./assets/image/services.svg" alt="undraw.co" class="w-[450px]" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250"/>
+          <div class="desc" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+            <p class="text-xl font-bold mb-6 flex gap-4 items-center">
+              <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>Penghematan Sumber Daya Energi
+            </p>
+            <p class="text-xl font-bold mb-6 flex gap-4 items-center">
+              <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>Pemanfaatan Barang Barang Lama
+            </p>
+            <p class="text-xl font-bold mb-6 flex gap-4 items-center">
+              <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>Mendaur Ulang Barang Barang Bekas
+            </p>
+            <p class="text-xl font-bold mb-6 flex gap-4 items-center">
+              <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>Penanaman Pohon atau Tanaman Terbaik
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div id="projects" class="projects py-12">
+    <div class="container mx-auto px-8">
+      <div class="projects-box">
+        <div class="box text-center mb-12">
+          <h1 class="text-4xl font-extrabold text-slate-900 mb-4" data-aos="fade-up" data-aos-duration="1000">
+            Projects
+          </h1>
+          <p class="text-slate-500 w-4/5 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            enim at quod. Eligendi vero maiores nulla accusamus quaerat illum
+            officia asperiores at omnis harum, quia, velit aut temporibus.
+            Vel, nostrum.
+          </p>
+        </div>
+        <div class="box flex flex-wrap justify-center gap-4 text-center mb-12">
+          <div class="p-10 bg-teal-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+            <h2 class="font-bold text-4xl">1000+</h2>
+            <p class="text-sm mt-2 text-slate-700">Orang Bergabung</p>
+          </div>
+          <div class="p-10 bg-teal-500" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="font-bold text-4xl">200++</h2>
+            <p class="text-sm mt-2 text-slate-700">Perusahaan Bekerjasama</p>
+          </div>
+          <div class="p-10 bg-teal-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+            <h2 class="font-bold text-4xl">1500+</h2>
+            <p class="text-sm mt-2 text-slate-700">Project Terselesaikan</p>
+          </div>
+        </div>
+        <div class="box flex flex-wrap gap-1 items-center justify-center">
+          <img src="./assets/image/services1.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+          <img src="./assets/image/services2.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+          <img src="./assets/image/services3.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+          <img src="./assets/image/services4.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+          <img src="./assets/image/services5.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+          <img src="./assets/image/services6.jpg" alt="unsplash.com" class="w-[300px] h-[250px]" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="contact py-14">
+    <div class="container mx-auto px-8">
+      <div class="contact-box">
+        <div class="box text-center mb-8">
+          <h1 class="text-4xl text-slate-900 mb-4 font-extrabold" data-aos="fade-up" data-aos-duration="1000">Contact</h1>
+          <p class="text-slate-500 text-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur, dolores?
+          </p>
+        </div>
+        <form action="https://formsubmit.co/iqbalmu1601@gmail.com" method="post">
+          <table class="mx-auto lg:w-3/5 w-3/4">
+            <tr>
+              <td>
+                <input class="w-full h-12 border rounded-md px-4" type="text" name="nama" placeholder="Nama Lengkap" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="w-full h-12 border rounded-md px-4" type="email" name="email"
+                  placeholder="email@example.com" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <textarea class="w-full border rounded-md p-4" name="pesan" cols="30" rows="10"
+                  placeholder="Message"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit"
+                  class="bg-teal-500 rounded px-10 py-2 font-semibold text-white block ml-auto cursor-pointer hover:bg-teal-600">
+                  Kirim
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer bg-slate-800 text-white">
+    <div class="container mx-auto py-10 px-8">
+      <div class="footer-box flex lg:flex-row flex-col justify-around lg:gap-0 gap-10">
+        <div class="box lg:w-[500px]">
+          <div class="logo flex items-center">
+            <img src="./assets/Tailwind.png" alt="logo" class="w-16" />
+            <h3 class="font-extrabold text-3xl mx-2">Ngoding.</h3>
+          </div>
+          <div class="desc text-base leading-loose text-slate-400">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            incidunt aspernatur error accusamus! Sapiente quos corporis autem
+            voluptatibus ducimus nostrum?
+          </div>
+        </div>
+        <div class="box">
+          <h3 class="font-extrabold text-lg mb-1">Menu</h3>
+          <ul>
+            <li>
+              <a href="#home" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">About</a>
+            </li>
+            <li>
+              <a href="#services" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Services</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3 class="font-extrabold text-lg mb-1">Company</h3>
+          <ul>
+            <li>
+              <a href="" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Term Of Services</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Privvacy Policy</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Blog</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-400 hover:text-slate-600 text-sm inline-block my-1">Cookies Setting</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button To Top -->
+  <a href="#home">
+    <i class="btt fa-solid fa-circle-arrow-up fixed bottom-7 right-10 text-5xl text-teal-500 hover:text-teal-600 z-50 hidden"></i>
+  </a>
+
+  <!-- Script -->
+  <script src="../src/dist/js/script.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
